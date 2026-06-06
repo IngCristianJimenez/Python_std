@@ -1,0 +1,18 @@
+git init 
+# inicia un repositorio
+
+
+git status
+
+"""
+Nos da el estatus actual de los archivos
+si estan desactualizados nos los marcará en rojo
+"""
+
+git add .
+
+#Para agregar o actualizar todos los archivos...
+
+# También se utiliza de esta manera para agregar "manualmente" cada archivo
+
+gid add index.html

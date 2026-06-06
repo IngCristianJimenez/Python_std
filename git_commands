@@ -10,9 +10,19 @@ si estan desactualizados nos los marcará en rojo
 """
 
 git add .
-
 #Para agregar o actualizar todos los archivos...
 
+git add index.html
 # También se utiliza de esta manera para agregar "manualmente" cada archivo
 
-gid add index.html
+
+# Después de actualizar hay que agregar comentarios de los cambios
+
+git commit -m "agregué el archivo git_commands"
+
+"""
+Todo lo realizado anteriormente fue localmente/en este equipo.
+Para subirlo a github hay que ingresar el siguiente comando:
+"""
+
+git push

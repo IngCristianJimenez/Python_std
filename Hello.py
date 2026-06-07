@@ -67,3 +67,69 @@ mensaje = '¡Hola Mundo!'
 # Por ejemplo, para incluir comillas dentro de una cadena, puedes usar \' o \". 
 # También puedes utilizar la notación de triple comilla ('''...''' o """...""") 
 # para crear cadenas de varias líneas.
+
+
+#Booleanos
+
+"""
+Representan los valores de verdad: True (verdadero) y False (falso).
+"""
+
+es_mayor_de_edad = True
+tiene_descuento = False
+
+# Nota
+# Los valores booleanos en Python comienzan con una letra mayúscula: True y False.
+
+
+# Declaración y asignación de variables
+
+"""
+Las variables son contenedores que nos permiten almacenar y manipular datos en nuestros programas.
+"""
+
+nombre = "Juan"
+edad = 25
+altura = 1.75
+es_estudiante = True
+
+# También puedes asignar el mismo valor a múltiples variables en una sola línea utilizando el operador de asignación múltiple:
+
+a = b = c = 10
+
+"""
+*** Los nombres de las variables solo pueden contener letras (a-z, A-Z), números (0-9) y guiones bajos (_). No pueden comenzar con un número.
+
+*** Python distingue entre mayúsculas y minúsculas, por lo que nombre y Nombre son variables diferentes.
+
+*** No se pueden utilizar palabras clave reservadas de Python como nombres de variables (por ejemplo, if, else, for, while, etc.).
+"""
+
+
+# Aritméticos
+
+"""
+
+* Suma (+): suma dos valores.
+* Resta (-): resta el segundo valor del primero.
+* Multiplicación (*): multiplica dos valores.
+* División (/): divide el primer valor por el segundo y devuelve un resultado de tipo flotante.
+* División entera (//): divide el primer valor por el segundo y devuelve un resultado de tipo entero (se descarta la parte decimal).
+* Módulo (%): devuelve el resto de la división entre el primer valor y el segundo.
+* Exponenciación (**): eleva el primer valor a la potencia del segundo.
+
+"""
+
+#    Ejemplos:
+    
+#    a = 10
+#    b = 3
+
+#    suma = a + b   # 13
+#    resta = a - b    # 7
+#    multiplicacion = a * b    # 30
+#    division = a / b   # 3.333333333
+#    división_entera = a // b   # 3
+#    modulo = a % b   # 1
+#    exponenciacion = a ** b   # 1000
+

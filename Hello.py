@@ -178,7 +178,8 @@ Los operadores lógicos se utilizan para combinar expresiones condicionales y ev
 # OR (or): devuelve True si al menos una de las condiciones es verdadera.
 # NOT (not): invierte el valor de una condición, devuelve True si la condición es falsa y False si la condición es verdadera.
 
-"""Ejemplo:
+"""
+Ejemplo:
 
 a = 10
 b = 3
@@ -189,3 +190,56 @@ resultado_or = (a > 15) or (b < 5)   # True
 resultado_not = not (a > 5)   # False
 
 """
+
+
+# Estructuras condicionales
+
+""" 
+Nos permiten ejecutar diferentes bloques de código según se cumpla o no una determinada condición.
+En Python, las estructuras condicionales más utilizadas son if, if-else y if-elif-else.
+"""
+
+# IF
+
+"""
+Se utiliza para ejecutar un bloque de código si una condición es verdadera. La sintaxis básica es la siguiente:
+
+if condicion:
+
+   # Bloque de código a ejecutar si la condición es verdadera
+   instrucciones
+
+"""
+
+# Ejemplo:
+
+edad = 18
+
+if edad >= 18:
+   print ("Eres mayor de edad.")
+
+
+"""
+En este ejemplo, si la variable edad es mayor o igual a 18,
+se ejecutará el bloque de código dentro del if y se imprimirá el mensaje "Eres mayor de edad."
+"""
+
+# IF-ELSE
+
+"""
+nos permite especificar un bloque de código alternativo que se ejecutará si la condición del if es falsa. La sintaxis básica es la siguiente:
+
+edad = 15
+
+
+if edad >= 18:
+   print ("Eres mayor de edad.")
+
+else:
+   print ("eres menor de edad.")
+
+
+   En este ejemplo, si la variable edad es mayor o igual a 18, se ejecutará el bloque de código dentro del if y se imprimirá el mensaje 
+   "Eres mayor de edad." De lo contrario, se ejecutará el bloque de código dentro del else y se imprimirá el mensaje "Eres menor de edad."
+"""
+

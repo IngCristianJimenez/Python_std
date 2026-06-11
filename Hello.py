@@ -243,3 +243,121 @@ else:
    "Eres mayor de edad." De lo contrario, se ejecutará el bloque de código dentro del else y se imprimirá el mensaje "Eres menor de edad."
 """
 
+
+# IF-ELIF-ELSE
+
+# La estructura if-elif-else nos permite especificar múltiples condiciones y bloques de código alternativos.
+
+"""
+La sintaxis básica es la siguiente:
+
+if condicion1:
+
+   # Bloque de código a ejecutar si la condicion1 es verdadera
+   instrucciones
+
+elif condicion2:
+
+   # Bloque de código a ejecutar si la condicion2 es verdadera
+   instrucciones
+
+else:
+
+   # Bloque de código a ejecutar si ninguna condición anterior es verdadera
+   instrucciones
+
+"""
+
+
+# Ejemplo:
+# 
+# calificacion = 85
+# 
+# 
+# if calificacion >= 90:
+#    print ("Excelente")
+# 
+# elif calificacion >= 80:
+#    print ("Muy bueno")
+# 
+# elif calificacion >= 70:
+#    print ("Bueno")
+# 
+# else:
+#    print ("Necesita mejorar")
+
+
+"""
+En este ejemplo, se evalúan múltiples condiciones en orden. 
+- Si la variable calificación es mayor o igual a 90, se imprime "Excelente".
+- Si no se cumple la primera condición, pero calificación es mayor o igual a 80, se imprime "Muy bueno".
+- Si no se cumplen las condiciones anteriores, pero calificación es mayor o igual a 70, se imprime "Bueno".
+- Si ninguna de las condiciones anteriores es verdadera, se ejecuta el bloque else y se imprime "Necesita mejorar".
+"""
+
+
+Bucles = "loops"
+
+# Los bucles nos permiten repetir un bloque de código varias veces. En Python, los bucles más comunes son for y while.
+
+
+# For
+
+"""
+
+Se utiliza para iterar sobre una secuencia (como una lista, una tupla o una cadena) o cualquier objeto iterable. 
+"""
+
+# La sintaxis básica es la siguiente:
+
+# for variable in secuencia:
+# 
+#     # Bloque de código a repetir
+#     instrucciones
+
+frutas = ["manzana", "banana", "naranja"]
+
+
+for fruta in frutas:
+    print(fruta)
+
+"""
+En este ejemplo, el bucle for itera sobre la lista frutas.
+En cada iteración, la variable fruta toma el valor de un elemento de la lista, y se ejecuta el bloque de código dentro del bucle.
+En este caso, se imprime cada fruta en una línea separada.
+"""
+ 
+# While
+
+"""
+Se utiliza para repetir un bloque de código mientras una condición sea verdadera.
+"""
+
+"""
+La sintaxis básica es la siguiente:
+
+while condicion:
+
+    # Bloque de código a repetir
+    instrucciones
+"""
+
+contador = 0
+
+while contador < 5:
+
+    print(contador)
+    contador += 1
+
+
+"""
+En este ejemplo, el bucle while se ejecuta mientras la variable contador sea menor que 5.
+En cada iteración, se imprime el valor de contador y luego se incrementa en 1 mediante la instrucción contador += 1.
+El bucle se detendrá cuando contador alcance el valor de 5.
+
+
+***Es importante tener cuidado al usar el bucle while, ya que, si la condición nunca se vuelve falsa,
+***el bucle se ejecutará indefinidamente, lo que se conoce como un bucle infinito.
+
+"""
+

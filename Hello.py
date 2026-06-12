@@ -361,3 +361,82 @@ El bucle se detendrá cuando contador alcance el valor de 5.
 
 """
 
+print ("Números del 1 al 5 multiplicados por 2 con bucle FOR:")
+for numero in range(1,6):
+    print (numero * 2)
+
+print ("\n Números del 1 al 5 multiplicados por 2 con el bucle WHILE:")
+contador = 1
+while contador <=5:
+    print (contador * 2)
+    contador += 1
+
+
+# ***Control de bucles***
+
+# Python proporciona algunas instrucciones especiales para controlar el flujo de ejecución dentro de los bucles: 
+
+"""
+Break
+
+La instrucción break se utiliza para salir prematuramente de un bucle, independientemente de la condición.
+Cuando se encuentra un break, el bucle se detiene y el flujo de ejecución continúa con la siguiente instrucción fuera del bucle.
+
+
+"""
+
+print("\n Contador con \"BREAK\": ")
+contador = 0
+
+while True:
+
+    print(contador)
+    contador += 1
+
+    if contador == 5:
+        break
+    
+
+"""
+   *** Continue ***
+   
+La instrucción continue se utiliza para saltar el resto del bloque de código dentro de un bucle y pasar a la siguiente iteración.
+"""
+
+# Ejemplo:
+
+print ("\n Contador con \"CONTINUE\": ")
+for i in range(10):
+
+    if i % 2 == 0:
+        continue
+    print(i)
+
+    
+"""
+En este ejemplo, el bucle for itera sobre los números del 0 al 9 utilizando la función range().
+Dentro del bucle, se verifica si el número es divisible por 2 utilizando el operador de módulo %.
+Si el número es divisible por 2 (es decir, si es par), se ejecuta la instrucción continue,
+lo que hace que se salte el resto del bloque de código y se pase a la siguiente iteración del bucle.
+Como resultado, solo se imprimirán los números impares.
+"""
+
+
+"""
+   *** Pass ***
+
+La instrucción pass es una operación nula que no hace nada.
+Se utiliza como marcador de posición cuando se requiere una instrucción sintácticamente, pero no se desea realizar ninguna acción.
+"""
+print ("\n Contador con instrucción \"PASS\": ")
+
+# Ejemplo:
+
+for i in range(5):
+    pass
+
+"""
+En este ejemplo, el bucle for itera sobre los números del 0 al 4,
+pero no se realiza ninguna acción dentro del bucle debido a la instrucción pass.
+Esto puede ser útil cuando se está desarrollando un programa y se desea reservar un bloque de código para implementarlo más adelante.
+"""

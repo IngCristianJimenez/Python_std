@@ -450,7 +450,8 @@ Python proporciona varias estructuras de datos integradas, como listas, tuplas, 
 cada una con sus propias características y usos.
 """
 
-# *** Listas ***
+
+print("\n Listas: ")
 
 """
 Una lista es una estructura de datos mutable y ordenada que permite almacenar una colección de elementos.
@@ -522,7 +523,7 @@ print(frutas)  # Imprime ["uva", "pera", "manzana"]
 
 
 # ***Listas de comprensión***
-
+print("\n Listas de Comprensión: \n")
 # Las listas de comprensión son una forma concisa de crear nuevas listas basadas en una secuencia existente.
 # Permiten filtrar y transformar los elementos de una lista en una sola línea de código.
 
@@ -542,6 +543,7 @@ print(cuadrados)  # Imprime [4, 16]
 
 
 # *** Tuplas ***
+print("\n Tuplas: ")
 
 """
 Una tupla es una estructura de datos inmutable y ordenada que permite almacenar una colección de elementos.
@@ -572,6 +574,7 @@ como coordenadas o datos de configuración.
 
 
 # *** Métodos de tuplas ***
+print("\n Métodos de Tuplas: \n")
 
 """
 Aunque las tuplas son inmutables, Python proporciona varios métodos útiles para trabajar con ellas:
@@ -593,3 +596,56 @@ print (mi_tupla.index(2))   # Salida: 1
 print (mi_tupla.index(2, 2))   #Salida: 3
 
 print (mi_tupla.index(2, 2, 4))   #Salida: 3
+
+
+
+print("\n Diccionarios: \n")
+
+"""
+Un diccionario es una estructura de datos mutable y no ordenada que permite almacenar pares de clave-valor.
+Cada elemento en un diccionario consiste en una clave única y su valor correspondiente. Los diccionarios se encierran entre llaves {},
+y los pares clave-valor se separan por comas.
+"""
+ 
+
+# Creación y acceso
+
+# Para crear un diccionario, utiliza llaves y separa las claves y valores con dos puntos.
+
+persona = {"nombre": "Juan", "edad": 25, "ciudad": "Madrid"}
+
+# Para acceder a los valores de un diccionario, utiliza la clave correspondiente entre corchetes:
+
+print(persona["nombre"])  # Imprime "Juan"
+print(persona["edad"])    # Imprime 25
+print(persona["ciudad"])  # Imprime "Madrid"
+
+# También puedes utilizar el método get() para obtener el valor de una clave.
+# Si la clave no existe, devuelve un valor predeterminado (por defecto, None).
+
+
+print("\n Métodos de diccionarios: \n")
+
+"""
+Los diccionarios en Python tienen varios métodos incorporados para manipular y acceder a los elementos. Algunos métodos comunes son:
+"""
+
+# - keys(): devuelve una vista de todas las claves del diccionario.
+# - values(): devuelve una vista de todos los valores del diccionario.
+# - items(): devuelve una vista de todos los pares clave-valor del diccionario.
+# - update(otro_diccionario): actualiza el diccionario con los pares clave-valor de otro diccionario.
+
+
+# Ejemplo:
+
+persona = {"nombre": "Juan", "edad": 25, "ciudad": "Madrid"}
+
+
+print(persona.keys())    # Imprime dict_keys(["nombre", "edad", "ciudad"])
+print(persona.values())  # Imprime dict_values(["Juan", 25, "Madrid"])
+print(persona.items())   # Imprime dict_items([("nombre", "Juan"), ("edad", 25), ("ciudad", "Madrid")])
+
+
+persona.update({"profesion": "Ingeniero"})
+print(persona)  # Imprime {"nombre": "Juan", "edad": 25, "ciudad": "Madrid", "profesion": "Ingeniero"}
+

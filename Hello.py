@@ -464,7 +464,7 @@ Los elementos de una lista pueden ser de diferentes tipos de datos y se encierra
 
 frutas = ["manzana", "banana", "naranja"]
 
-print ("\n Lista 0,1,2\n")
+print ("\n Lista 0,1,2")
 print (frutas[0]) # Imprime manzana
 print (frutas[1]) # Imprime banana
 print (frutas[2]) # Imprime naranja
@@ -474,7 +474,7 @@ print (frutas[2]) # Imprime naranja
 También puedes acceder a los elementos desde el final de la lista utilizando índices negativos.
 El índice -1 representa el último elemento, -2 representa el penúltimo, y así sucesivamente.
 """
-print ("\n Lista -1,-2 y -3\n")
+print ("\n Lista -1,-2 y -3")
 print (frutas[-1]) # Imprime naranja
 print (frutas[-2]) # Imprime banana
 print (frutas[-3]) # Imprime manzana
@@ -523,7 +523,7 @@ print(frutas)  # Imprime ["uva", "pera", "manzana"]
 
 
 # ***Listas de comprensión***
-print("\n Listas de Comprensión: \n")
+print("\n Listas de Comprensión: ")
 # Las listas de comprensión son una forma concisa de crear nuevas listas basadas en una secuencia existente.
 # Permiten filtrar y transformar los elementos de una lista en una sola línea de código.
 
@@ -574,7 +574,7 @@ como coordenadas o datos de configuración.
 
 
 # *** Métodos de tuplas ***
-print("\n Métodos de Tuplas: \n")
+print("\n Métodos de Tuplas: ")
 
 """
 Aunque las tuplas son inmutables, Python proporciona varios métodos útiles para trabajar con ellas:
@@ -599,7 +599,7 @@ print (mi_tupla.index(2, 2, 4))   #Salida: 3
 
 
 
-print("\n Diccionarios: \n")
+print("\n Diccionarios: ")
 
 """
 Un diccionario es una estructura de datos mutable y no ordenada que permite almacenar pares de clave-valor.
@@ -624,7 +624,7 @@ print(persona["ciudad"])  # Imprime "Madrid"
 # Si la clave no existe, devuelve un valor predeterminado (por defecto, None).
 
 
-print("\n Métodos de diccionarios: \n")
+print("\n Métodos de diccionarios: ")
 
 """
 Los diccionarios en Python tienen varios métodos incorporados para manipular y acceder a los elementos. Algunos métodos comunes son:
@@ -651,7 +651,7 @@ print(persona)  # Imprime {"nombre": "Juan", "edad": 25, "ciudad": "Madrid", "pr
 
 
 
-print("\n Conjuntos (set): \n")
+print("\n Conjuntos (set): ")
 
 # Un conjunto es una estructura de datos mutable y no ordenada que permite almacenar una colección de elementos únicos.
 # Los conjuntos se encierran entre llaves {} o se crean utilizando la función set().
@@ -691,7 +691,7 @@ diferencia_simetrica = conjunto1 ^ conjunto2
 print(diferencia_simetrica)  # Imprime {1, 2, 4, 5}
 
 
-print("\n Métodos de conjuntos: \n")
+print("\n Métodos de conjuntos: ")
 
 
 """
@@ -730,5 +730,74 @@ print(frutas)  # Imprime set()
 # Las estructuras de datos en Python nos brindan una gran flexibilidad y potencia para almacenar y manipular datos en nuestros programas.
 # Las listas son útiles para colecciones ordenadas y mutables, las tuplas para colecciones ordenadas e inmutables, los diccionarios para
 # almacenar pares clave-valor y los conjuntos para colecciones no ordenadas de elementos únicos.
+
+
+
+
+print("\n Funciones: ")
+
+
+# Las funciones son bloques de código reutilizables que nos permiten encapsular tareas específicas y ejecutarlas cuando sea necesario.
+# Las funciones nos ayudan a organizar nuestro código, evitar la repetición y
+# hacer que nuestros programas sean más modulares y fáciles de mantener.
+
+ 
+"""
+
+Definición y llamada de funciones
+
+Para definir una función en Python, utilizamos la palabra clave def seguida del nombre de la función y paréntesis.
+Opcionalmente, podemos especificar parámetros dentro de los paréntesis.
+El bloque de código de la función se indenta después de los dos puntos.
+"""
+
+# Para llamar a una función, simplemente escribimos el nombre de la función seguido de paréntesis:
+
+
+def saludo():
+    print("¡Hola, mundo!")
+
+print("\n def \"saludo\"")
+saludo()  # Imprime "¡Hola, mundo!"
+
+
+print("\n Parámetros y argumentos")
+
+# Las funciones pueden aceptar parámetros, que son valores que se pasan a la función cuando se la llama.
+# Los parámetros se especifican dentro de los paréntesis en la definición de la función.
+
+def saludo(nombre):
+    print(f"\n¡Hola, {nombre}!")
+
+# Al llamar a la función, proporcionamos los argumentos correspondientes a los parámetros:
+
+saludo("Juan")  # Imprime "¡Hola, Juan!"
+saludo("María")  # Imprime "¡Hola, María!"
+
+
+
+print("\n Valores de retorno:")
+
+# Las funciones pueden devolver valores utilizando la palabra clave return.
+# El valor de retorno puede ser utilizado por el código que llama a la función. 
+
+def suma(a, b):
+    return a + b
+
+
+resultado = suma(3, 4)
+print(resultado)  # Imprime 7
+
+
+
+print("\n Funciones anónimas (lambda):")
+
+# Python permite crear funciones anónimas o funciones lambda,
+# que son funciones sin nombre definidas en una sola línea.
+# Se utilizan comúnmente para funciones pequeñas y concisas.
+
+cuadrado = lambda x: x ** 2
+print(cuadrado(5))  # Imprime 25
+
 
 

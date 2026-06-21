@@ -798,6 +798,82 @@ print("\n Funciones anónimas (lambda):")
 
 cuadrado = lambda x: x ** 2
 print(cuadrado(5))  # Imprime 25
+ 
+
+
+print("\n Alcance de las variables (local vs. global)")
+
+# Las variables definidas dentro de una función tienen un alcance local, 
+# lo que significa que solo son accesibles dentro de la función.
+# Por otro lado, las variables definidas fuera de cualquier función tienen un alcance global
+# y pueden ser accedidas desde cualquier parte del programa.
+
+
+def funcion():
+    variable_local = 10
+    print(variable_local)  # Accesible dentro de la función
+
+
+variable_global = 20
+
+
+def funcion2():
+    print(variable_global)  # Accesible desde cualquier lugar
+
+
+funcion()  # Imprime 10
+funcion2()  # Imprime 20
+print(variable_global)  # Imprime 20
+print(variable_local)  # Genera un error, la variable no está definida en este alcance.
 
 
 
+print("\n Documentación de funciones (docstrings)")
+
+# Es una buena práctica documentar nuestras funciones utilizando docstrings.
+# Los docstrings son cadenas de texto que describen el propósito, los parámetros y el valor de retorno de una función.
+# Se colocan inmediatamente después de la definición de la función y se encierran entre triples comillas dobles.
+
+
+def area_rectangulo(base, altura):
+    """
+    Calcula el área de un rectángulo.
+
+
+    Args:
+        base (float): La base del rectángulo.
+        altura (float): La altura del rectángulo.
+
+
+    Returns:
+        float: El área del rectángulo.
+    """
+    return base * altura
+
+
+
+
+print("\n Funciones con número variable de argumentos")
+
+# Python permite definir funciones que acepten un número variable de argumentos.
+# Esto se logra utilizando el operador * antes del nombre del parámetro.
+
+def suma_variable(*numeros):
+    total = 0
+    for numero in numeros:
+        total += numero
+    return total
+
+
+print(suma_variable(1, 2, 3))  # Imprime 6
+print(suma_variable(4, 5, 6, 7))  # Imprime 22
+
+# Las funciones son una herramienta fundamental en la programación y nos permiten estructurar y modularizar nuestro código.
+# Con la capacidad de definir funciones personalizadas, podemos encapsular tareas específicas y reutilizarlas en
+# diferentes partes de nuestro programa.
+
+
+# Además de las funciones definidas por el usuario, Python también proporciona una amplia gama de
+# funciones incorporadas que podemos utilizar directamente, como print(), len(), range(), entre otras.
+
+ 

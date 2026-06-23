@@ -824,7 +824,7 @@ def funcion2():
 funcion()  # Imprime 10
 funcion2()  # Imprime 20
 print(variable_global)  # Imprime 20
-print(variable_local)  # Genera un error, la variable no está definida en este alcance.
+# print(variable_local)  # Genera un error, la variable no está definida en este alcance.
 
 
 
@@ -877,3 +877,61 @@ print(suma_variable(4, 5, 6, 7))  # Imprime 22
 # funciones incorporadas que podemos utilizar directamente, como print(), len(), range(), entre otras.
 
  
+print("\n Manejo de errores y excepciones:")
+
+
+# Cuando escribimos programas, es común encontrarnos con situaciones inesperadas o errores durante la ejecución.
+# Python proporciona un mecanismo para manejar estos errores de manera controlada utilizando el manejo de excepciones.
+# Esto nos permite capturar y manejar errores específicos sin que el programa se detenga abruptamente.
+
+
+"""
+*** Errores comunes en Python ***
+
+- Error de sintaxis (SyntaxError)
+
+Ocurre cuando el código no sigue las reglas de sintaxis de Python,
+como olvidar dos puntos después de una declaración de función o un bucle.
+"""
+
+def mi_funcion():
+#def mi_funcion() # Falta los dos puntos
+
+    print("Hola")
+
+
+"""
+- Error de nombre (NameError)
+
+Ocurre cuando se hace referencia a una variable o función que no ha sido definida.
+"""
+variable_no_definida = "variable_definida"
+print(variable_no_definida)
+
+
+
+"""
+- Error de tipo (TypeError)
+
+Ocurre cuando se realiza una operación con tipos de datos incompatibles, como intentar sumar un número y una cadena.
+"""
+
+# resultado = 5 + "10" 
+# ---> TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+
+"""
+- Error de índice (IndexError)
+
+Ocurre cuando se intenta acceder a un índice fuera del rango válido de una lista o secuencia.
+"""
+
+lista = [1, 2, 3]
+# print(lista[3])  # El índice 3 está fuera del rango
+# -->  IndexError: list index out of range
+
+"""
+Estos son solo algunos ejemplos de errores comunes. Cuando ocurre un error, Python genera una excepción y 
+muestra un mensaje de error que incluye el tipo de excepción y una descripción del problema.
+"""
+
